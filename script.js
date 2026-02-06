@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
                   const bill = parseFloat(document.getElementById("bill").value);
                   const people = parseInt(document.getElementById("people").value);
-            if (isNaN(bill) ||  isNaN(people) || bill <= 0 || people < 0) {
+            if (isNaN(bill) ||  isNaN(people) || bill <= 0 || people <= 0) {
                 alert("Please enter valid positive numbers.");
                 return;
             }
-            const tipAmount = (bill).toFixed(1);
+            const billAmount = (bill).toFixed(1);
             const totalPerPerson = ((bill / people).toFixed(2));
-            document.getElementById("tipAmount").textContent = tipAmount;
+            document.getElementById("billAmount").textContent = billAmount;
             document.getElementById("totalPerPerson").textContent = totalPerPerson;
         });
     }
@@ -172,3 +172,4 @@ if (userDisplay) {
         userDisplay.textContent = loggedInUser;
     }
 }
+
