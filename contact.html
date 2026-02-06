@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TipCalc - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">TipCalc</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero contact-hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Send us a message.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Write your message here" rows="6" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="contactResponse" class="contact-response"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>TipCalc</h2>
+                <p>Quickly calculate tips and split bills with ease!</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TipCalc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">&#8679;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

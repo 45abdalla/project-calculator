@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TipCalc - Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">TipCalc</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="calculator.html" class="active">Calculator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero calculator-hero">
+        <div class="hero-content">
+            <h1>Tip Calculator</h1>
+            <p>Calculate tips and split bills easily!</p>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section">
+        <div class="calculator-container">
+            <h2>Calculate Your Tip</h2>
+            <form id="tipForm">
+                <label for="bill">Bill Amount ($)</label>
+                <input type="number" id="bill" placeholder="Enter bill amount" min="0" step="0.01" required>
+
+                <!-- <label for="tip">Tip Percentage (%)</label>
+                <input type="number" id="tip" placeholder="Enter tip %" min="0" step="0.1" required> -->
+
+                <label for="people">Number of People</label>
+                <input type="number" id="people" placeholder="Enter number of people" min="1" step="1" required>
+
+                <button type="submit" class="btn">Calculate</button>
+            </form>
+
+            <div id="result" class="result">
+                <p><strong>Tip Amount:</strong> $<span id="tipAmount">0.00</span></p>
+                <p><strong>Total Per Person:</strong> $<span id="totalPerPerson">0.00</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>TipCalc</h2>
+                <p>Quickly calculate tips and split bills with ease!</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TipCalc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">&#8679;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
